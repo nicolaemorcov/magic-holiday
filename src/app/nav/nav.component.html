@@ -1,0 +1,23 @@
+<header>
+    <div class="container">
+      <a routerLink="/" class="logo">{{apptitle}}</a>
+      <nav>
+        <ul>
+          <li><a routerLink="/">Main</a></li>
+          <li><a routerLink="/reservations">Reservations</a></li>
+          <li><a routerLink="/clients">Clients</a></li>
+          <li><a >
+                <div class="dropdown">
+                    <button (click)=this.myFunction() class="dropbtn">Rooms</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a routerLink="/addRoom">Add Room</a>
+                        <a routerLink="/removeRoom">Delete Room</a>
+                        <a routerLink="/updateRoom">Update Room</a>
+                    </div>
+                </div>
+                </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
