@@ -6,6 +6,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { AddroomComponent } from './addroom/addroom.component';
 import { RemoveroomComponent } from './removeroom/removeroom.component';
 import { UpdateroomComponent } from './updateroom/updateroom.component';
+import { RoomsComponent } from './rooms/rooms.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'clients', component: ClientsComponent},
   { path: 'addRoom', component: AddroomComponent},
   { path: 'removeRoom', component: RemoveroomComponent},
-  { path: 'updateRoom', component: UpdateroomComponent}
+  { path: 'updateRoom', component: UpdateroomComponent},
+  { path: 'rooms', component: RoomsComponent}
 ];
 
 @NgModule({

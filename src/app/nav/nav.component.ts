@@ -18,6 +18,10 @@ export class NavComponent implements OnInit {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
+  dbClickMethod(){
+    
+  }
+
   onClick(event){
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");

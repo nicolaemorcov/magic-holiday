@@ -1,0 +1,26 @@
+<h1>All</h1>
+
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">price</th>
+            <th scope="col">room Facilities</th>
+            <th scope="col">room DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let room of rooms">
+            <td>{{ room.id }}</td>
+            <td>{{ room.roomPrice }}</td>
+            <td>{{ room.roomFacilities }}</td>
+            <td>{{ room.roomDescription }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {{data}}

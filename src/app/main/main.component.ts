@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  h1Style: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   firstClick(){
-    console.log("clicked");
+    this.h1Style = true;
   }
 
 }

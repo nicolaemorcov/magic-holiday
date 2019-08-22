@@ -11,6 +11,12 @@ import { MainComponent } from './main/main.component';
 import { AddroomComponent } from './addroom/addroom.component';
 import { RemoveroomComponent } from './removeroom/removeroom.component';
 import { UpdateroomComponent } from './updateroom/updateroom.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { RoomFormComponent } from './room-form/room-form.component';
+// import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+// import { Http }
+// import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +28,14 @@ import { UpdateroomComponent } from './updateroom/updateroom.component';
     MainComponent,
     AddroomComponent,
     RemoveroomComponent,
-    UpdateroomComponent
+    UpdateroomComponent,
+    RoomsComponent,
+    RoomFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,9 +8,10 @@
           <li><a routerLink="/clients">Clients</a></li>
           <li><a >
                 <div class="dropdown">
-                    <button (click)=this.myFunction() class="dropbtn">Rooms</button>
+                    <button (click)=this.myFunction() class="dropbtn" (dblclick)="this.dbClickMethod()">Rooms</button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a routerLink="/addRoom">Add Room</a>
+                      <a routerLink="/rooms">List Rooms</a>  
+                      <a routerLink="/addRoom">Add Room</a>
                         <a routerLink="/removeRoom">Delete Room</a>
                         <a routerLink="/updateRoom">Update Room</a>
                     </div>
